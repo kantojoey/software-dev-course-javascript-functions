@@ -72,3 +72,42 @@ for (let i = 0; i < names.length; i++) {
 */
 
 // ✅ Your refactored code goes below this line!
+
+//Script 1 refectored:
+function greet(name){
+   console.log(`Welcome, ${name}!`);
+}
+greet("Alice");
+greet("Bob");
+greet("Charlie");
+//OR
+function greetingArray(names){
+   for(let i = 0; i < names.length; i++) {
+      console.log("Welcome, " + names[i] + "!");
+   }
+}
+greetingArray(["Alice", "Bob", "Charlie"]);
+
+// Script 2 refactored:
+function sumNumbers(num1, num2){
+   sum = num1 + num2;
+   console.log(`The sum of ${num1} and ${num2} is ${sum}`);
+}
+sumNumbers(5, 10);
+
+// Script 3 refactored:
+function multiplyNumbers(num1, num2){
+   product = num1 * num2
+   console.log(`The product of ${num1} and ${num2} is ${product}`);
+}
+multiplyNumbers(5, 10);
+
+// Script 4 refactored:
+function printNameArray(names){
+   console.log("Names in the list:");
+   for(let i = 0; i < names.length; i++){
+      console.log(names[i]);
+   }
+}
+let nameList= ["Alice", "Bob", "Charlie"];
+printNameArray(nameList);
