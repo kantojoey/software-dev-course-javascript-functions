@@ -36,7 +36,6 @@ reusable functions that solve specific tasks. This activity encourages:
 // 3. Capitalize the role if needed.
 // 4. Return the result.
 
-
 // ============================================
 // 🧩 Task 2: Calculate Event Cost
 // ============================================
@@ -64,7 +63,6 @@ reusable functions that solve specific tasks. This activity encourages:
 // 1. Check if the string includes both "@" and ".".
 // 2. Return true or false accordingly.
 
-
 // ============================================
 // 🧠 Collaborative Steps
 // ============================================
@@ -89,3 +87,33 @@ reusable functions that solve specific tasks. This activity encourages:
 // - Explain how your team approached the design and testing process
 
 // ✅ Bonus: Can you extend any of the functions to be more flexible or reusable?
+
+console.log("Task 1:")
+function greeting(username, userRole) {
+    return `Name: ${username}, Role: ${userRole}`;
+}
+
+console.log(greeting('Alexis', 'Student'));
+
+console.log("Task 2:")
+function calculateCosts(numberOfAttendees, costPerAttendee) {
+    let total = numberOfAttendees * costPerAttendee;
+    if (numberOfAttendees > 100) {
+        total  *= 0.9;
+    }
+
+    return total;
+}
+
+console.log(calculateCosts(120, 25));
+
+console.log("Task 3:")
+function emailValidator(email) 
+{
+    return email.includes("@") 
+    && email.includes(".") 
+    && !email.includes(" ") 
+    && email.lastIndexOf(".") > email.indexOf("@")
+}
+
+console.log(emailValidator("mike.denney@cooldude.gg"))
